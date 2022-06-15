@@ -9,23 +9,31 @@
 /* Begin PBXBuildFile section */
 		A145511328513F88006DC40B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A145511228513F88006DC40B /* AppDelegate.swift */; };
 		A145511528513F88006DC40B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A145511428513F88006DC40B /* SceneDelegate.swift */; };
-		A145511728513F88006DC40B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A145511628513F88006DC40B /* ViewController.swift */; };
+		A145511728513F88006DC40B /* ShoppingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A145511628513F88006DC40B /* ShoppingViewController.swift */; };
 		A145511A28513F88006DC40B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A145511828513F88006DC40B /* Main.storyboard */; };
 		A145511D28513F88006DC40B /* ComprasUSA.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A145511B28513F88006DC40B /* ComprasUSA.xcdatamodeld */; };
 		A145511F28513F8E006DC40B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A145511E28513F8E006DC40B /* Assets.xcassets */; };
 		A145512228513F8E006DC40B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A145512028513F8E006DC40B /* LaunchScreen.storyboard */; };
+		A145512A28515664006DC40B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A145512928515664006DC40B /* SettingsViewController.swift */; };
+		A145512C28515672006DC40B /* TaxesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A145512B28515672006DC40B /* TaxesViewController.swift */; };
+		A145512E28518795006DC40B /* TaxesCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A145512D28518795006DC40B /* TaxesCalculator.swift */; };
+		A145513028518ADF006DC40B /* UIViewController+TaxesCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A145512F28518ADF006DC40B /* UIViewController+TaxesCalculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A145510F28513F88006DC40B /* ComprasUSA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComprasUSA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A145511228513F88006DC40B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A145511428513F88006DC40B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A145511628513F88006DC40B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A145511628513F88006DC40B /* ShoppingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingViewController.swift; sourceTree = "<group>"; };
 		A145511928513F88006DC40B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A145511C28513F88006DC40B /* ComprasUSA.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ComprasUSA.xcdatamodel; sourceTree = "<group>"; };
 		A145511E28513F8E006DC40B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A145512128513F8E006DC40B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A145512328513F8E006DC40B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A145512928515664006DC40B /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		A145512B28515672006DC40B /* TaxesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxesViewController.swift; sourceTree = "<group>"; };
+		A145512D28518795006DC40B /* TaxesCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxesCalculator.swift; sourceTree = "<group>"; };
+		A145512F28518ADF006DC40B /* UIViewController+TaxesCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+TaxesCalculator.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +68,11 @@
 			children = (
 				A145511228513F88006DC40B /* AppDelegate.swift */,
 				A145511428513F88006DC40B /* SceneDelegate.swift */,
-				A145511628513F88006DC40B /* ViewController.swift */,
+				A145512F28518ADF006DC40B /* UIViewController+TaxesCalculator.swift */,
+				A145511628513F88006DC40B /* ShoppingViewController.swift */,
+				A145512928515664006DC40B /* SettingsViewController.swift */,
+				A145512B28515672006DC40B /* TaxesViewController.swift */,
+				A145512D28518795006DC40B /* TaxesCalculator.swift */,
 				A145511828513F88006DC40B /* Main.storyboard */,
 				A145511E28513F8E006DC40B /* Assets.xcassets */,
 				A145512028513F8E006DC40B /* LaunchScreen.storyboard */,
@@ -141,9 +153,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A145511728513F88006DC40B /* ViewController.swift in Sources */,
+				A145513028518ADF006DC40B /* UIViewController+TaxesCalculator.swift in Sources */,
+				A145512C28515672006DC40B /* TaxesViewController.swift in Sources */,
+				A145511728513F88006DC40B /* ShoppingViewController.swift in Sources */,
 				A145511D28513F88006DC40B /* ComprasUSA.xcdatamodeld in Sources */,
+				A145512E28518795006DC40B /* TaxesCalculator.swift in Sources */,
 				A145511328513F88006DC40B /* AppDelegate.swift in Sources */,
+				A145512A28515664006DC40B /* SettingsViewController.swift in Sources */,
 				A145511528513F88006DC40B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,6 +313,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,6 +342,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
